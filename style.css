@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body
@@ -13,6 +12,7 @@ body
     background: #fff;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
 
 }
 ul
