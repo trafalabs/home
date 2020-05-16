@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="blog.css">
+
+
+
+    <title>Read Our Blog</title>
+</head>
+<script src="/navbar.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<body>
+    <header class="hero blog">
+        <!-- buat navbar terdiri dari 1 div id = navbar terus 2 item yaitu logo dan ul -->
+        <div id="navbar" class="navbar top">
+            <h1 class="logo"><span class="text-primary"> <i class="fas fa-code"></i> Trafa</span>Labs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#cases">cases</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- create Content Showcase -->
+        <div class="content">
+            <h1>BLOG</h1>
+            <hr>
+            <p>Welcome To Our Blog Section</p>
+            <a href="#post1" class="btn btn-dark">Go To First Post</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- postbloglink 1-->
+        <article id="post1" class="flex-columns">
+            <div class="row">
+                <div class="columns">
+                    <div class="columns-1">
+                        <img src="/blog/post1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="columns-2 bg-light">
+                        <h2>Corona Virus</h2>
+                        <p>
+                            <i class="fas fa-user"></i> Posted by
+                            <strong> Raehan Rahmad </strong> | April 2020
+                        </p>
+                        <p> As IT pros around the world go all-out to support a workforce that's suddenly fully remote,
+                            many
+                            technology workers and companies are also joining efforts to alleviate the COVID-19 crisis
+                            in various
+                            ways, including developing products to combat the virus, tracking and predicting its spread,
+                            and
+                            protecting hospitals from cyberattacks.</p>
+
+                        <a href="post1.html" class="btn btn-dark"> <i class="fas fa-chevron"></i> Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <!-- Post Blog Link 2 -->
+        <article class="flex-columns flex-reverse">
+            <div class="row">
+                <div class="columns">
+                    <div class="columns-1">
+                        <img src="/blog/itu2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="columns-2 bg-dark">
+                        <h2>Istanbul teknik üniversitesi</h2>
+                        <p>
+                            <i class="fas fa-user"></i> Posted by
+                            <strong> Raehan Rahmad </strong> | 5 May 2020
+                        </p>
+                        <p>Istanbul Technical University (ITU) was founded in 1773 by Sultan Musafa III as the Imperial
+                            School of Naval Engineering, making it the third oldest technical university in the world.
+                            Over the years, its functions have widened from the training of military staff to architects
+                            in the 19th century and civil engineers in the 20th century. Today, its primary focus is
+                            engineering, although it is also known for its social sciences and history.
+                        </p>
+
+
+                        <a href="post2.html" class="btn btn-outline"> <i class="fas fa-chevron"></i> Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <!-- Post Blog Link 3 -->
+        <article class="flex-columns">
+            <div class="row">
+                <div class="columns">
+                    <div class="columns-1">
+                        <img src="/blog/olympic.jpg" alt="">
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="columns-2 bg-light">
+                        <h2>Tokyo 2020 Olympics will not be ‘cancelled’ due to coronavirus, IOC insists</h2>
+                        <p>
+                            <i class="fas fa-user"></i> Posted by
+                            <strong> Muhammad Giri Wiwaha </strong> | April 2020
+                        </p>
+                        <p>The International Olympic Committee insist the cancellation of the Tokyo 2020 Olympics is
+                            “not on the agenda”, though they are considering various scenarios amid the coronavirus
+                            pandemic.</p>
+
+
+                        <a href="post3.html" class="btn btn-dark"> <i class="fas fa-chevron"></i> Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - TrafaLabs</p>
+    </footer>
+
+
+
+    </main>
+
+</body>
+<script>
+    $('#content a,.btn').on('click', function (e) {
+        if (this.hash !== '') {
+            e.preventDefault();
+            const hash = this.hash;
+            $('html,body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100,
+                },
+                800
+            );
+        }
+    });
+</script>
+
+</html>

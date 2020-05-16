@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    color: #333;
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+}
+p
+{
+    margin: 10px 0px;
+}
+img
+{
+    width: 100%;
+}
+
+.navbar
+{
+    display: flex;
+    /* membuat item navbar horizontal */
+    align-items:center;
+    /* dari block itu dirapiin pake align item (setting vertikal secara center)
+    di buat jadi 35 set standart position */
+    justify-content: space-between;
+    /* kita set space beetwen agar flexnya mempunyai space */
+    background-color:#1f92be;
+    color: white;
+    opacity: 0.9975;
+    height: 70px;
+    /* the default of navbar ussualy is 70px */
+    width: 100%;
+    /* set 100 persen width nya biar ngeblock full panjang */
+    padding: 0px 30px;
+    /* ngeset padding semuanya ini antara 30px kanan kiri */
+    top: 0;
+    position: fixed;
+    
+    /* untuk tetap diatas */
+    transition: 0.5s;
+    
+
+}
+.navbar.top
+{
+    background-color: transparent;
+}
+.navbar a
+{
+  color: #fff;
+  padding: 10px 20px;
+  /* set ruang kosong atas bawah 10px dan kanan kiri 20px */
+  margin: 0 5px;
+  /* dikasih jarak antar ruang kosong itu kanan kiri 5 px */
+}
+.navbar a:hover
+{
+    border-bottom: #f4f4f4 solid 2px;
+}
+.navbar ul
+{
+  
+    display: flex;
+    /* biar link nya pada display horizontal */
+
+}
+.navbar .logo
+{
+    font-weight: 1200px;
+}
+
+/* header  */
+.hero.blog
+{
+    background: url('./home/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color : #f4f4f4;
+    position: relative;
+   
+}
+.hero .content
+{
+    display: flex;
+    flex-direction: column;
+    /* flex direction ke bawah */
+    justify-content: center;
+    /* buat kebawahin tapi ke tengah */
+    align-items: center;
+    /* buat kekananin tapi ke tengah */
+    text-align: center;
+    /* tulisannya biar tengah */
+    height: 100%;
+    padding: 0px 20px; 
+    margin-left :750px;
+    
+}
+.hero .content h1
+{
+    font-size : 100px;
+}
+.hero .content p
+{
+    font-size: 23px;
+    margin : 20px 30px;
+    max-width: 600px;
+    z-index: 0;
+}
+/* create overlay */
+/* .hero::before
+{
+    content: '';
+    position: absolute;
+    background: #333;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+
+} */
+.hero *
+{
+    z-index: 1;
+}
+.hero .content h1,.hero .content,.hero .content a
+{
+    z-index: 0;
+}
+/* blog */
+.hero.blog
+{
+    background: url('/home/blog1.jpg') no-repeat center
+    center/cover;
+    height: 100vh;
+
+}
+
+/* icons */
+
+.icons
+{
+    padding: 50px;
+    
+}
+.icons p
+{
+    margin: 0px 10px;
+}
+.icons h3
+{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.icons i
+{
+    background-color: #333;
+    color:#f4f4f4;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.cases img:hover
+{
+    opacity: 0.7;
+}
+.section-padding
+{
+    padding: 20px 20px 40px;
+}
+.flex-grid .row
+{ 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+.flex-grid .column
+{
+    flex: 25%;
+    padding: 0px 5px;
+    max-width: 25%;
+}
+.team.section-padding img
+{
+    border-radius: 50%;
+    width: 350px;
+    margin: 0px 40px;
+   
+}
+
+
+/* callback form */
+.callback-form
+{
+    width: 100%;
+    padding: 20px 0;
+}
+.callback-form label
+{
+    display: block;
+    margin-bottom: 2px;
+}
+.callback-form .form-control
+{
+    margin-bottom: 15px;
+}
+.callback-form input
+{
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5;
+    margin: 20px 0;
+}
+.callback-form .btn
+{
+    padding: 12px 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.callback-form .form-control hr
+{
+    margin-bottom: 20px;
+}
+.callback-form .form-control h2
+{
+    margin-bottom: 1px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.post
+{
+    padding: 50px 30px;
+}
+.post h2
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 2px;
+}
+.post p
+{
+    margin: 20px 75px;
+    text-align:justify ;
+}
+.post .meta
+{
+    margin-bottom: 30px;
+}
+.post img{
+    width: 600px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    padding:20px 0px;
+}
+/* footer */
+.footer
+{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+}
+.footer .social i:hover
+{
+    color: #28a745;
+    
+}
+
+.footer .social i
+{
+    color: #f4f4f4;
+}
+.footer .social > *
+{
+    padding: 5px;
+}
+/* youtube post */
+.youtubepost
+{
+    display: block;
+    margin: auto;
+}
+
+/* mobile */
+@media(max-width :768px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    #navbar a
+    {
+        padding :0px 10px;
+    }
+    .flex-items
+    {
+        flex-direction: column;
+    }
+    .flex-columns .columns,.flex-grid .column
+    {
+        flex :100%;
+        max-width: 100%;
+    }
+    .hero .content
+    {
+        margin-left: 0px;
+    }
+    .hero.blog 
+    {
+        background: #1f92be;
+    }
+    
+}

@@ -1,0 +1,138 @@
+.text-primary
+{
+    color: #333;
+}
+.text-secondary
+{
+    color: #0284d0;
+}
+.btn
+{
+    background-color:#28a745;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #f4f4f4;
+    border: none;
+    border-radius : 5px;
+    cursor: pointer;
+}
+.btn-primary,.bg-primary
+{
+    background-color: #28a745;
+    color: white;
+}
+.btn-secondary,.bg-secondary
+{
+    background-color: #0284d0;
+    color:#f4f4f4;
+}
+.btn-dark,.bg-dark
+{
+    background-color: #333;
+    color:#f4f4f4;
+}
+.btn-light,.bg-light
+{
+    background-color:#f4f4f4;
+    color:#333 ;
+}
+.btn-outline
+{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.btn:hover
+{
+    opacity: 0.9;
+
+}
+/* flex items*/
+.flex-items
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+/* masuk ke item flex yaitu div  */
+.flex-items > div
+{
+    padding: 20px;
+}
+
+
+.flex-columns .row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .columns
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+    
+}
+
+.flex-columns .columns .columns-1,
+.flex-columns .columns .columns-2
+{
+    height: 100%;
+    width: 100%;
+}
+
+.flex-columns  img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flex-columns .columns .columns-2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+.flex-columns h2
+{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4
+{
+    margin-bottom: 10px;
+}
+
+.flex-columns p
+{
+    margin: 20px 0px;
+}
+
+.flex-columns.flex-reverse .row
+{
+    flex-direction: row-reverse;
+}
+
+/* Section Header */
+.section-header
+{
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-header h2
+{
+    margin : 20px 0;
+    font-size: 40px;
+    
+}
