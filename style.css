@@ -297,6 +297,14 @@ img
     padding: 5px;
 }
 
+.instagram:hover{
+    transform: scale(1.1);
+}
+
+.whats-app:hover{
+    transform: scale(1.1);
+}
+
 /* mobile */
 @media(max-width :768px)
 {
