@@ -93,7 +93,7 @@ img
 /* header  */
 .hero.blog
 {
-    background: url('./home/blog1.jpg') no-repeat center center/cover;
+    background: url('/home/blog1.jpg') no-repeat center center/cover;
     height: 100vh;
     color : #f4f4f4;
     position: relative;
