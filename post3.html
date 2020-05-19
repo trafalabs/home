@@ -71,20 +71,42 @@
 
     </main>
 
-    <footer class="footer bg-dark">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    
+    <footer id="contact" class="footer bg-dark">
+        <p style="margin-bottom: 20px">CONTACT US</p>
+        <div class="social" style="display: flex; flex-direction: row; margin-bottom: 10px">
+            <a href="https://instagram.com/trafalabs?igshid=1nc3txu5z7xr6" target="_blank" class="instagram" style="width: 50px; height: 50px; position: relative; margin-right: 20px">
+                <img src="home/instagram.png" style="object-fit: cover; width: 50px; height: 50px">
+            </a>
+            <a onclick="showNumber()" class="whats-app" style="width: 50px; height: 50px; position: relative; margin-left: 20px">
+                <img src="home/whats-app.png" style="object-fit: cover; width: 50px; height: 50px">
+            </a>
         </div>
         <p>Copyright &copy; 2020 - TrafaLabs</p>
     </footer>
-
-
-
-    </main>
+  
 
 </body>
+<script>
+    $('#navbar a,.btn').on('click',function (e)
+    {
+        if(this.hash !=='')
+        {
+            e.preventDefault();
+            const hash = this.hash;
+            $('html,body').animate(
+                {
+                    scrollTop:$(hash).offset().top - 100,
+                },
+                800
+            );
+        }
+    });
+</script>
 
+<script>
+    function showNumber() {
+        alert("Whats App : 088231248978 / 081289421168")
+    }
+</script>
 </html>
