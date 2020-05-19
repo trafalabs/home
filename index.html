@@ -23,10 +23,10 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#cases">cases</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </div>
@@ -189,25 +189,63 @@
                 <div class="columns">
                     <div class="columns-2 bg-secondary">
                         <h2>Pricing Packages</h2>
-                        <h4>Starting at IDR 800.000 or 53$ per website, Hosting and Domain Included for Free</h4>
+                        <h4>Starting at IDR 600.000 or 41$ per website, Hosting and Domain Included for Free</h4>
                         <p>Various packages to suits your needs, further price negotiation allowed via Whats app, Instagram DM or Direct Calls.
                         </p>
 
-                        <a href="blog.html" class="btn btn-outline"> <i class="fas fa-chevron"></i>Pricing</a>
+                        <a href="#pricelist" class="btn btn-outline"> <i class="fas fa-chevron"></i>Pricing</a>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+
+        <!-- pricelist -->
+        <section id="pricelist" class="cases flex-grid section-padding">
+            <header class="section-header">
+                <h4>Contact Us If You Want To Order Our Packages!!!</h4>
+                <h2>Our Pricelist</h2>
+                <p>Negotiations Are Allowed</p>
+            </header>
+
+            <div class="row">
+                <div class="column">
+                    </a>
+                    <a href="cases/S1.jpg" data-lightbox="cases" data-title="hello">
+                        <img src="home/basic.jpg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="cases/s2.jpg" data-lightbox="cases" data-title="hello">
+                        <img src="home/gold.jpg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="cases/S3.jpg" data-lightbox="cases" data-title="hello">
+                        <img src="home/diamond.jpg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="cases/s4.jpg" data-lightbox="cases" data-title="hello">
+                        <img src="home/complex.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class="footer bg-dark">
-      <div class="social">
-        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-      </div>
-      <p>Copyright &copy; 2020 - TrafaLabs</p>
+        <p style="margin-bottom: 20px">CONTACT US</p>
+        <div class="social" style="display: flex; flex-direction: row; margin-bottom: 10px">
+            <a href="https://instagram.com/trafalabs?igshid=1nc3txu5z7xr6" target="_blank" class="instagram" style="width: 50px; height: 50px; position: relative; margin-right: 20px">
+                <img src="home/instagram.png" style="object-fit: cover; width: 50px; height: 50px">
+            </a>
+            <a onclick="showNumber()" class="whats-app" style="width: 50px; height: 50px; position: relative; margin-left: 20px">
+                <img src="home/whats-app.png" style="object-fit: cover; width: 50px; height: 50px">
+            </a>
+        </div>
+        <p>Copyright &copy; 2020 - TrafaLabs</p>
     </footer>
     </main>
 
@@ -227,6 +265,12 @@
             );
         }
     });
+</script>
+
+<script>
+    function showNumber() {
+        alert("Whats App : 088231248978 / 081289421168")
+    }
 </script>
 
 </html>
