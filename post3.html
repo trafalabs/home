@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167407882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167407882-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
@@ -13,7 +23,7 @@
 
 
     <title>Tokyo 2020 Olympics will not be ‘cancelled’ due to coronavirus, IOC insists</title>
-       <link rel="shortcut icon" href="favico.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="favico.jpg" type="image/x-icon">
 </head>
 <script src="navbar.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -64,7 +74,8 @@
 
             <p>
                 “The cancellation is not on the agenda. We are committed to the success of these Games,” Back told the
-                New York Times.An IOC task force, which included the World Health Organization, has decided it is too early to make a
+                New York Times.An IOC task force, which included the World Health Organization, has decided it is too
+                early to make a
                 definitive call on how the coronavirus will impact the Olympics.
             </p>
         </section>
@@ -72,32 +83,32 @@
 
     </main>
 
-    
+
     <footer id="contact" class="footer bg-dark">
         <p style="margin-bottom: 20px">CONTACT US</p>
         <div class="social" style="display: flex; flex-direction: row; margin-bottom: 10px">
-            <a href="https://instagram.com/trafalabs?igshid=1nc3txu5z7xr6" target="_blank" class="instagram" style="width: 50px; height: 50px; position: relative; margin-right: 20px">
+            <a href="https://instagram.com/trafalabs?igshid=1nc3txu5z7xr6" target="_blank" class="instagram"
+                style="width: 50px; height: 50px; position: relative; margin-right: 20px">
                 <img src="home/instagram.png" style="object-fit: cover; width: 50px; height: 50px">
             </a>
-            <a onclick="showNumber()" class="whats-app" style="width: 50px; height: 50px; position: relative; margin-left: 20px">
+            <a onclick="showNumber()" class="whats-app"
+                style="width: 50px; height: 50px; position: relative; margin-left: 20px">
                 <img src="home/whats-app.png" style="object-fit: cover; width: 50px; height: 50px">
             </a>
         </div>
         <p>Copyright &copy; 2020 - TrafaLabs</p>
     </footer>
-  
+
 
 </body>
 <script>
-    $('#navbar a,.btn').on('click',function (e)
-    {
-        if(this.hash !=='')
-        {
+    $('#navbar a,.btn').on('click', function (e) {
+        if (this.hash !== '') {
             e.preventDefault();
             const hash = this.hash;
             $('html,body').animate(
                 {
-                    scrollTop:$(hash).offset().top - 100,
+                    scrollTop: $(hash).offset().top - 100,
                 },
                 800
             );
@@ -110,4 +121,5 @@
         alert("Whats App : 088231248978 / 081289421168")
     }
 </script>
+
 </html>
